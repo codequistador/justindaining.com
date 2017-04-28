@@ -1,0 +1,62 @@
+/**
+ * SASS/SCSS/Compass Transcription of Skeleton Responsive Grid
+ * originally authored by Dave Gamache. This translation offers
+ * mixins that support fluid and as well as fixed grids to supplement
+ * the work that Dave Gamache has done.
+ * @author Dennis Thompson <http://www.atomicpages.net>
+ * @copyright Copyright (c) 2013 AtomicPages LLC
+ * @license MIT
+ * @version 1.6.1
+ */
+
+// IMPORTS
+@import "vars"; // import _global_variables.scss
+@import "mixins"; // import _mixins.scss
+
+/* HOME
+ * ------------------------------------------------ */
+
+.logo {
+	padding: 50px 0 0 0;
+}
+.resume {
+	img {
+		padding: 0 0 2px 0;
+	}
+}
+.col_head {
+	border-bottom: 6px solid #c0c0c0;
+	margin: 0 0 20px 0;
+}
+.footer {
+	text-align: center;
+}
+.copy {
+	text-align: center;
+	color: #999;
+}
+
+
+/* MEDIA QUERIES
+ * ------------------------------------------------ */
+/* 768 - 1024 STYLES */
+@media only screen and (min-width: $baseWidthMQ) and (max-width: 1024px) {
+
+}
+
+/* MOBILE CATCH ALL */
+@media only screen and (max-width: $baseWidthMQ) {
+	.logo {
+		padding: 20px 0 0 0;
+	}
+}
+
+/* MOBILE LANDSCAPE - TABLET PORTRAIT OVERRIDES */
+@media only screen and (min-width: 480px) and (max-width: $tabletWidth) {
+	/* add code here */
+}
+
+/* MOBILE PORTRAIT OVERRIDES */
+@media only screen and (max-width: 479px) {
+	/* add code here */
+}

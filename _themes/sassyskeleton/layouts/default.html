@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>{{ _site_name }}
+			{{ if segment_1 }}
+			– {{ title }}
+			{{ endif }}</title>
+	<meta property="description" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="{{ theme:css src="base" }}">
+	<link rel="stylesheet" href="{{ theme:css src="skeleton" }}">
+	<link rel="stylesheet" href="{{ theme:css src="layout" }}">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="{{ theme:img src="favicon.ico" }}">
+	<link rel="apple-touch-icon" href="{{ theme:img src="apple-touch-icon.png" }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ theme:img src="apple-touch-icon-72x72.png" }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ theme:img src="apple-touch-icon-114x114.png" }}">
+
+</head>
+<body>
+  
+  {{ layout_content }}
+
+  <!--Javascript-->
+	
+<script src="{{ theme:js src="jquery.1.11.0" }}"></script>		
+<script src="{{ theme:js src="project" }}"></script>
+
+<!-- Make IE8 and below responsive by adding CSS3 MediaQuery support -->
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!-- Youtube and Vimeo API (improves video on touch devices and gives better HD support) -->
+<script type="text/javascript" src="http://www.youtube.com/iframe_api"></script>
+<script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+
+</body>
+</html>

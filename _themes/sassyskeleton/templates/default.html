@@ -1,0 +1,64 @@
+<div class="container">
+	<div class="row">
+		<div class="twelve columns logo">
+			<img class="scale" src="{{ theme:img src="logo.jpg" }}" alt="JustinDaining.com" />
+		</div>
+	</div>
+	<div class="row resume">
+		<div class="four columns experience">
+			<div class="col_head">
+				<img class="scale" src="{{ theme:img src="experience.jpg" }}" alt="Experience" />
+			</div>
+			<div class="col_content">
+				{{ cf_experience }}
+				<div class="exp">
+					<p>
+						<b>{{ company }}</b><br />
+						{{ time_frame }}<br />
+						{{ position }}<br />
+						<a href="http://{{ url }}">{{ url }}</a>
+					</p>
+				</div>
+				{{ /cf_experience }}
+			</div>
+		</div>
+		<div class="four columns tools">
+			<div class="col_head">
+				<img class="scale" src="{{ theme:img src="tools.jpg" }}" alt="Tools" />
+			</div>
+			<div class="col_content">
+				<p>
+				{{ cf_tools }}
+					{{ tool }}<br />
+				{{ /cf_tools }}
+				</p>
+			</div>
+		</div>
+		<div class="four columns results">
+			<div class="col_head">
+				<img class="scale" src="{{ theme:img src="results.jpg" }}" alt="Results" />
+			</div>
+			<div class="col_content">
+				{{ cf_results }}
+					<p><a target="_blank" href="{{ url }}">{{ site_name }}</a> - {{ tools }}{{ if notes }} ({{ notes }}){{ endif }}</p>
+				{{ /cf_results }}
+			</div>
+		</div>
+	</div>
+	<div class="row">
+	{{ cf_footer }}
+		<div class="three columns footer">
+			e {{ email }}
+		</div>
+		<div class="three columns footer">
+			p {{ phone }}
+		</div>
+		<div class="three columns footer">
+			t <a target="_blank" href="http://www.twitter.com/{{ twitter }}">@{{ twitter }}</a>
+		</div>
+		<div class="three columns footer">
+			gh <a target="_blank" href="https://www.github.com/{{ github }}">/{{ github }}</a>
+		</div>
+	{{ /cf_footer }}
+	</div>
+</div>

@@ -1,0 +1,73 @@
+title: JD Homepage
+fields:
+	cf_experience:
+	  display: Experience
+	  type: grid
+	  starting_rows: 1
+	  min_rows: 1
+	  fields:
+	    company:
+	      display: Company
+	      type: text
+	      width: 25%
+	    time_frame:
+	      display: Time Frame
+	      type: text
+	      width: 25%
+	    position:
+	      display: Position
+	      type: text
+	      width: 25%
+	    url:
+	      display: URL
+	      type: text
+	      width: 25%
+	cf_tools:
+		display: Tools
+		type: grid
+		starting_rows: 1
+		min_rows: 1
+		fields:
+			tool:
+				display: Tool
+				type: text
+				width: 100%
+	cf_results:
+		display: Results
+		type: grid
+		starting_rows: 1
+		min_rows: 1
+		fields: 
+			site_name:
+				display: Site Name
+				type: text
+				width: 25%
+			url:
+				display: URL
+				type: text
+				width: 25%
+			tools:
+				display: Primary Tools
+				type: text
+				width: 25%
+			notes:
+				display: notes
+				type: text
+				width: 25%
+	cf_footer:
+		display: Footer content
+		type: grid
+		starting_rows: 1
+		max_rows: 1
+		fields: 
+			email:
+				display: Email
+			phone:
+				display: Phone
+			twitter: 
+				display: Twitter
+			github:
+				display: Github Username
+	content:
+		display: content
+		type: hidden

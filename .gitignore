@@ -1,0 +1,10 @@
+_add-ons/
+_app/
+_cache/
+_logs/
+admin/
+assets/
+admin.php
+favicon.gif
+favicon.ico
+index.php
