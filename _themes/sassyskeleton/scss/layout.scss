@@ -50,26 +50,7 @@
  *   CSS and include that instead to use some of that
  *   hardware-accelerated goodness.
  */
-.unslider-nav ol {
-  list-style: none;
-  text-align: center;
-}
-.unslider-nav ol li {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 4px;
-  background: transparent;
-  border-radius: 5px;
-  overflow: hidden;
-  text-indent: -999em;
-  border: 2px solid #fff;
-  cursor: pointer;
-}
-.unslider-nav ol li.unslider-active {
-  background: #fff;
-  cursor: default;
-}
+
 .banner {
   padding-top: 40px;
 }
@@ -140,6 +121,27 @@
   right: 20px
 }
 
+.unslider-nav ol {
+  list-style: none;
+  text-align: center;
+  padding-top: 10px;
+}
+.unslider-nav ol li {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 4px;
+  background: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.unslider-nav ol li.unslider-active {
+  background: #fff;
+  cursor: default;
+}
 
 /* MEDIA QUERIES
  * ------------------------------------------------ */
@@ -152,6 +154,14 @@
 @media only screen and (max-width: $baseWidthMQ) {
   .logo {
     padding: 20px 0 0 0;
+  }
+  .unslider {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .unslider li {
+    line-height: 22px;
   }
 }
 
